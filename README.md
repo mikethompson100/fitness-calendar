@@ -7,10 +7,6 @@ It is a simple calendar to track gym sessions and stay
 accountable. Built with vanilla JavaScript — no frameworks, no dependencies.
 
 ---
-## 🚀 Screenshot / Live Demo
-![App Screenshot](https://www.mikethompson100.com/images/mike.jpeg)
-🔗 [Live Demo](https://www.mikethompson100.com/)
-
 ## 🗓️ Features
 - Log gym sessions by clicking on a calendar day
 - Mark days as complete or missed
