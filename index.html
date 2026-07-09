@@ -19,10 +19,28 @@
       </header>
       <main>
         <section>
-          <p>This is a test.</p>
+          <p id="status-message">
+            Welcome to the dashboard. This dashboard is designed to show you
+            your workouts and provide accountability and structure.
+          </p>
         </section>
       </main>
+
+      <div id="form-container">
+        <form id="showNewUserForm">
+          <label for="nameInput">Name:</label>
+          <input type="text" id="nameInput" placeholder="Your name" />
+
+          <label for="messageInput">Message:</label>
+          <textarea id="messageInput" placeholder="Say something..."></textarea>
+
+          <button type="submit">Submit</button>
+
+          <div id="output"></div>
+        </form>
+      </div>
     </div>
-    <script defer src="js/scripts.js"></script>
+    <script src="js/data/initData.js" defer></script>
+    <script src="js/main.js" defer></script>
   </body>
 </html>

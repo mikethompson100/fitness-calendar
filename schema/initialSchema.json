@@ -1,0 +1,34 @@
+{
+  "users":
+  [
+            {
+              "profile": {
+                "name": "",
+                "overallGoal": "",
+                "createdAt": ""
+              },
+              "weeklyLogs": [
+                {
+                  "weekId": "",                   
+                  "weeklyTargetCount": 0,
+                  "days": [
+                    {
+                      "dayIdentifier": null,             
+                      "scheduled": false,                 
+                      "day": null,                      
+                      "scheduledTime": null,              
+                      "activity": {
+                        "activityType": "Running",        
+                        "workoutRoutineSpecifics": null,  
+                        "postWorkoutComments": null,      
+                        "feelingTags": null               
+                      },          
+                      "isCompleted": false,               
+                      "completedAt": null          
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+}

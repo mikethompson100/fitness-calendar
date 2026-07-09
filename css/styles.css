@@ -57,9 +57,9 @@ footer {
   width: min(
     92%,
     1200px
-  ); /* never wider than 1140px, breathes on small screens */
-  margin-inline: auto; /* centers it horizontally, modern & concise */
-  padding-inline: 1.5rem; /* side breathing room */
+  ); 
+  margin-inline: auto;
+  padding-inline: 1.5rem;
   font-size: 1.1rem;
   line-height: 1.4;
 }
@@ -69,4 +69,10 @@ footer {
     font-size: 1.3rem;
     line-height: 1.5;
   }
+}
+#status-message {
+  font-size: 1.2rem;
+}
+#form-container {
+  display: none;
 }
