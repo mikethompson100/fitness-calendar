@@ -13,7 +13,7 @@
     />
   </head>
   <body>
-    <div class="container">
+    <div id="main-container">
       <header>
         <h1>Fitness Accountability Calendar</h1>
       </header>
@@ -25,20 +25,23 @@
           </p>
         </section>
       </main>
+    </div>
 
-      <div id="form-container">
-        <form id="showNewUserForm">
-          <label for="nameInput">Name:</label>
-          <input type="text" id="nameInput" placeholder="Your name" />
+    <div id="form-container">
+      <form id="showNewUserForm">
+      <fieldset>
+          <legend><h2>Please provide your name and what your overall fitness goal is.</h2></legend>
+            <label for="nameInput">Name:</label>
+            <input type="text" id="nameInput" placeholder="Your name" size="25" maxlength="25" /><br/>
 
-          <label for="messageInput">Message:</label>
-          <textarea id="messageInput" placeholder="Say something..."></textarea>
+            <label for="messageInput">Message:</label>
+            <textarea id="goalInput" placeholder="Enter your overall fitness goal..." cols="50" rows="10" maxlength="300"></textarea>
 
-          <button type="submit">Submit</button>
+            <button type="submit">Submit</button>
 
-          <div id="output"></div>
-        </form>
-      </div>
+            <div id="output"></div>
+        </fieldset> 
+      </form>
     </div>
     <script src="js/data/initData.js" defer></script>
     <script src="js/main.js" defer></script>

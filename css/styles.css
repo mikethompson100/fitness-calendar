@@ -16,7 +16,9 @@ body {
 
 body {
   font-family: Oswald;
-  background-color:beige;
+  background-color: beige;
+  display: flex;
+  justify-content: center;
 }
 
 img,
@@ -52,12 +54,19 @@ main,
 footer {
   margin: 20px 0;
 }
+form {
+  display: flex;
+  flex-direction: column;
+}
+fieldset {
+  border: none;
+}
+label, input, button {
+  display: block;
+}
 
-.container {
-  width: min(
-    92%,
-    1200px
-  ); 
+#main-container {
+  width: min(92%, 1200px);
   margin-inline: auto;
   padding-inline: 1.5rem;
   font-size: 1.1rem;
@@ -65,7 +74,7 @@ footer {
 }
 
 @media (min-width: 768px) {
-  .container {
+  #main-container {
     font-size: 1.3rem;
     line-height: 1.5;
   }
@@ -75,4 +84,8 @@ footer {
 }
 #form-container {
   display: none;
+  max-width: 400px;
+}
+#showNewUserForm {
+  justify-content: center;
 }
