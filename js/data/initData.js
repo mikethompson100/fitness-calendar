@@ -47,6 +47,13 @@ export function setup() {
       let data = JSON.parse(localStorage.getItem("users"));
       data.users[0].profile.name = nameInput;
       data.users[0].profile.overallGoal = goalInput;
+      data.users[0].profile.createdAt = new Date();
+      data.users[0].weeklyLogs[0].weekId = 1;
+      data.users[0].weeklyLogs[0].weekFirstDayOfWeek = "2026-07-12";
+
+
+
+ 
       localStorage.setItem("users", JSON.stringify(data));
     });
   }

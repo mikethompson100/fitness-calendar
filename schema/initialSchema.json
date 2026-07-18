@@ -9,7 +9,8 @@
               },
               "weeklyLogs": [
                 {
-                  "weekId": "",                   
+                  "weekId": "", 
+                  "weekFirstDayOfWeek": "",                  
                   "weeklyTargetCount": 0,
                   "days": [
                     {
