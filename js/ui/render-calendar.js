@@ -1,13 +1,13 @@
 // Renders the weekly calendar to the UI
 
-function getStartOfWeek(date = new Date()) {
+/* function getStartOfWeek(date = new Date()) {
   const result = new Date(date);
   const dayOfWeek = result.getDay();
   result.setDate(result.getDate() - dayOfWeek);
   return result;
 }
 
-
+ */
 
 export function render_UI() {
   const calendar = document.getElementById("calendar-container");
