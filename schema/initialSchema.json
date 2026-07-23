@@ -3,13 +3,14 @@
   [
             {
               "profile": {
+                "userId": "",
                 "name": "",
                 "overallGoal": "",
-                "createdAt": ""
+                "createdAtDate": ""
               },
               "weeklyLogs": [
                 {
-                  "weekId": "", 
+                  "weekId": 0, 
                   "weekFirstDayOfWeek": "",                  
                   "weeklyTargetCount": 0,
                   "days": [
