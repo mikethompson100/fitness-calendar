@@ -10,14 +10,29 @@
  */
 
 export function render_UI() {
+
+  // Find the Sunday of the current week to be able to start the UI rendering
+
+  const currentDate = new Date();
+  const prevSunday = new Date(currentDate);
+  prevSunday.setDate(currentDate.getDate() - currentDate.getDay());
+  
+
+
+
+
   const calendar = document.getElementById("calendar-container");
-  const fragment = document.createDocumentFragment();
+
+  //const currentDateString = currentDate.toISOString().split('T')[0];
+  //const fragment = document.createDocumentFragment();
 
 
-/* // ---- 1. Setup ----
+
+
+
+/* 
 const calendarEl = document.getElementById('calendar-container');
 
-// Track the "anchor" date for the currently displayed week
 let currentWeekStart = getStartOfWeek(new Date());
 console.log("currentWeekStart", currentWeekStart);
 
@@ -109,7 +124,7 @@ renderWeek(currentWeekStart); */
 
 }
 
-const currentWeekStart = getStartOfWeek().toISOString().split('T')[0];
+//const currentWeekStart = getStartOfWeek().toISOString().split('T')[0];
 
 
 render_UI();

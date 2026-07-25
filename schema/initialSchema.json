@@ -6,6 +6,8 @@
                 "userId": "",
                 "name": "",
                 "overallGoal": "",
+                "currentWeekId": 0,
+                "lastWeekId": 0,
                 "createdAtDate": ""
               },
               "weeklyLogs": [
