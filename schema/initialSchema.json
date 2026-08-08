@@ -1,38 +1,43 @@
 {
-  "users":
-  [
-            {
-              "profile": {
-                "userId": "",
-                "name": "",
-                "overallGoal": "",
-                "currentWeekId": 0,
-                "lastWeekId": 0,
-                "createdAtDate": ""
-              },
-              "weeklyLogs": [
-                {
-                  "weekId": 0, 
-                  "weekFirstDayOfWeek": "",                  
-                  "weeklyTargetCount": 0,
-                  "days": [
-                    {
-                      "dayIdentifier": null,             
-                      "scheduled": false,                 
-                      "day": null,                      
-                      "scheduledTime": null,              
-                      "activity": {
-                        "activityType": "Running",        
-                        "workoutRoutineSpecifics": null,  
-                        "postWorkoutComments": null,      
-                        "feelingTags": null               
-                      },          
-                      "isCompleted": false,               
-                      "completedAt": null          
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
+  "appData": 
+  {
+    "users":
+    [
+              {
+                "profile": {
+                  "user": {
+                    "userId": "",
+                    "name": "",
+                    "overallGoal": "",
+                    "createdAtDate": ""
+                  },
+                  "currentWeekId": 0,
+                  "lastWeekId": 0
+                },
+                "weeklyLogs": [
+                  {
+                    "weekId": 0, 
+                    "weekFirstDayOfWeek": "",                  
+                    "weeklyTargetCount": 0,
+                    "days": [
+                      {
+                        "dayIdentifier": null,             
+                        "scheduled": false,                 
+                        "day": null,                      
+                        "scheduledTime": null,              
+                        "activity": {
+                          "activityType": "Running",        
+                          "workoutRoutineSpecifics": null,  
+                          "postWorkoutComments": null,      
+                          "feelingTags": null               
+                        },          
+                        "isCompleted": false,               
+                        "completedAt": null          
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+  }
 }

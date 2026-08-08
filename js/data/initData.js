@@ -2,7 +2,7 @@
 
 export function setup() {
   let data = null;
-
+/* 
   async function ensureUserDataExists() {
     const existing = localStorage.getItem("users");
     if (existing && existing !== "null") {
@@ -35,7 +35,7 @@ export function setup() {
   ensureUserDataExists(data).catch((err) => {
     console.error("Initialization error:", err.message);
   });
-
+ 
   function showNewUserForm() {
     document.getElementById("form-container").style.display = "flex";
     document.getElementById("main-container").style.display = "none";
@@ -56,7 +56,7 @@ export function setup() {
  
       localStorage.setItem("users", JSON.stringify(data));
     });
-  }
+  }*/
 }
 
 setup();

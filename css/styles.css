@@ -120,13 +120,30 @@ button {
 
 
 
-
-.day {
-    flex: 1;
+#calendar-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
+}
+
+@media (min-width: 768px) {
+  #calendar-container {
+    flex-direction: row;
+  }
+}
+
+.day {
     padding: 12px;
-    border: 1px solid #ddd;
+    border: 1px solid #aaa;
     border-radius: 8px;
+    width: 90vw;
+    height: 250px;
+}
+
+@media (min-width: 768px) {
+  .day {
+    max-width: 125px;
+    flex: 1 1 0;
+    min-width: 0;
+    width: auto;
+  }
 }

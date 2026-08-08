@@ -11,20 +11,29 @@
 
 export function render_UI() {
 
+
   // Find the Sunday of the current week to be able to start the UI rendering
-
   const currentDate = new Date();
-  const prevSunday = new Date(currentDate);
-  prevSunday.setDate(currentDate.getDate() - currentDate.getDay());
+  const sundayOfWeek = new Date(currentDate);
+  sundayOfWeek.setDate(currentDate.getDate() - currentDate.getDay());
   
-
-
-
-
   const calendar = document.getElementById("calendar-container");
+  const fragment = document.createDocumentFragment();
+
+  for (let i=0; i<7; i++) {
+    const dayDiv = document.createElement("div");
+    const innerDiv = document.createElement("div");
+    dayDiv.className = "day";
+    fragment.appendChild(dayDiv);
+  }
+  
+  calendar.appendChild(fragment);
+
+
+
 
   //const currentDateString = currentDate.toISOString().split('T')[0];
-  //const fragment = document.createDocumentFragment();
+   
 
 
 

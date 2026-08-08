@@ -37,8 +37,8 @@ This section highlights the initial design workflow, transitioning from the Figm
 ​```
 gym-calendar/
 ├── index.html
-├── css/style.css
-└── scripts/app.js
+├── css/styles.css
+└── js/main.js
 ​```
 
 ## 🎉 Getting started

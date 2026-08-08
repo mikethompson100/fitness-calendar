@@ -130,3 +130,29 @@ Markdown document
 **Keywords:** #visual #prompt #cursor #ux #ui #design #layout #proof-of-concept
 
 
+## 2026-07-26 — 
+
+**Context:**  When first attempting to read from localStorage, I am anticipating a lot of different files updating data for this project and need to consider one javascript file that can manage the data.
+
+**What I tried:** I used claude.ai to give me a quick example to build from. 
+
+**Decision:** I decided to create a dataStore.js file to centralize managing of the localStorage data. I manually tested that the logic works for the setData, getData and updateData functions. After confirming that the logic works, one of the next steps would be to refactor the initData.js file and remove the process of referencing the initialSchema.json file for the initial state of the data. That can be easily handled inside the dataStore.js file.
+
+**Uncertainty:** Testing is ahead. I will make sure that this logic works and that other files can access it and use it. 
+ 
+**Keywords:** #localStorage #architecture #claudeai #testing 
+
+
+## 2026-08-03 — 
+
+**Context:**  During the testing phase of the function updateData in dataStore.js, I realized that the process of updating individual locations of data in the localstorage object using spread operators can get complicated to write and manage.
+
+**What I tried:** I used Cursor to research different strategies of managing all of this complexity.
+
+**Decision:** I decided on two things. First I decided to breakdown all of the small data updates into smaller helper functions. Will need to use structuredClone() for deep copying. Secondly, I decided to simplify the initial use of the schema in order to keep my initial MVP goal in mind and not get too caught up in rabbit holes. I will leave certain data fields in an unused state for future use in order to keep on track and not allow the robustness of the schema to dictate my involvement with every possible feature. Simplification is required.
+
+**Uncertainty:** I will need to figure out a way to do all these data updates in an efficient and modular manner.
+ 
+**Keywords:** #testing #localStorage #simplify #mvp
+
+
