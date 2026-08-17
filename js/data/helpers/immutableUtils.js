@@ -4,6 +4,8 @@
  * Safely read a nested value using a path array.
  * Example: getAtPath(obj, ['users', 0, 'profile', 'user', 'name'])
  * Returns undefined if any step along the path is missing.
+ * 
+ * Verifies you can read a nested value from the current app data without changing anything.
  */
 export function getAtPath(obj, path) {
   return path.reduce((current, key) => {
@@ -18,6 +20,8 @@ export function getAtPath(obj, path) {
  *
  * path = ['users', 0, 'profile', 'user', 'name']
  * value = 'Vicky'
+ * 
+ * Verifies you can replace a single nested field and save the result to localStorage.
  */
 export function setAtPath(obj, path, value) {
   if (path.length === 0) return value;

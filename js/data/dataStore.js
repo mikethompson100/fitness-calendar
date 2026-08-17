@@ -58,6 +58,20 @@ const DEFAULT_DATA = {
                         },          
                         "isCompleted": false,               
                         "completedAt": null          
+                      },
+                      {
+                        "dayIdentifier": null,             
+                        "scheduled": false,                 
+                        "day": null,                      
+                        "scheduledTime": null,              
+                        "activity": {
+                          "activityType": "My second workout day",        
+                          "workoutRoutineSpecifics": null,  
+                          "postWorkoutComments": null,      
+                          "feelingTags": null              
+                        },          
+                        "isCompleted": false,               
+                        "completedAt": null          
                       }
                     ]
                   }

@@ -11,7 +11,8 @@ document.getElementById("myButton").addEventListener("click", () => {
   const current = getData();
 // updateUserProfile(0, { userId: 3 });
 // const a = getAtPath(getAppData(), ["users", 0, "weeklyLogs", 0, "days", 0, "activity", "activityType"]);
-const a = patchAppData((appData) => setAtPath(appData, ["users", 1, "weeklyLogs", 0, "days", 0, "activity", "activityType"], "Sprinting"));
+// const a = patchAppData((appData) => setAtPath(appData, ["users", 0, "weeklyLogs", 1, "days", 1, "activity", "activityType"], "Swimming!"));
+const a = patchAppData((appData) => setAtPath(appData, ["users", 0, "weeklyLogs", 1, "days", 1, "activity", "activityType"], "Swimming!!"));
 
 console.log("A:", a);
 
